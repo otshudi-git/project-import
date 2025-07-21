@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V.G SERVICE-TRADING SARL - Services Intégrés en Afrique Centrale</title>
+    <meta name="description" content="V.G Service-Trading SARL - Leader en services intégrés : génie civil, transport, commerce, sécurité, immobilier en RDC et Tanzanie">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .language-selector {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1001;
+            display: flex;
+            gap: 5px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 8px;
+            border-radius: 25px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .lang-btn {
+            padding: 6px 12px;
+            border: none;
+            background: transparent;
+            color: #64748b;
+            font-size: 0.85rem;
+            font-weight: 500;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .lang-btn:hover {
+            background: #f1f5f9;
+            color: #1e40af;
+        }
+        
+        .lang-btn.active {
+            background: #1e40af;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .language-selector {
+                top: 10px;
+                right: 10px;
+                padding: 6px;
+            }
+            
+            .lang-btn {
+                padding: 4px 8px;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <button class="lang-btn active" data-lang="fr">FR</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="sw">SW</button>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <h1>V.G SERVICE-TRADING</h1>
+                    <span>SARL</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#accueil" class="nav-link" data-translate="nav.home">Accueil</a></li>
+                    <li><a href="#services" class="nav-link" data-translate="nav.services">Services</a></li>
+                    <li><a href="#entreprise" class="nav-link" data-translate="nav.company">Entreprise</a></li>
+                    <li><a href="#contact" class="nav-link" data-translate="nav.contact">Contact</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="hero-title" data-translate="hero.title">Leader en Services Intégrés en Afrique Centrale</h1>
+                <p class="hero-subtitle" data-translate="hero.subtitle">V.G Service-Trading SARL propose une gamme complète de services dans le génie civil, transport, commerce, sécurité et immobilier.</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary" data-translate="hero.btn.services">Découvrir nos Services</a>
+                    <a href="#contact" class="btn btn-outline" data-translate="hero.btn.contact">Nous Contacter</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3>2</h3>
+                        <p data-translate="hero.stats.countries">Pays d'Opération</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>6</h3>
+                        <p data-translate="hero.stats.sectors">Secteurs d'Activité</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>3</h3>
+                        <p data-translate="hero.stats.offices">Bureaux</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-translate="services.title">Nos Services</h2>
+                <p data-translate="services.subtitle">Une expertise diversifiée pour répondre à tous vos besoins</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h3 data-translate="services.construction.title">Construction & Fabrication</h3>
+                    <ul>
+                        <li data-translate="services.construction.item1">Génie civil et travaux d'infrastructure</li>
+                        <li data-translate="services.construction.item2">Fabrication de briques</li>
+                        <li data-translate="services.construction.item3">Sous-traitance générale</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 data-translate="services.transport.title">Transport & Logistique</h3>
+                    <ul>
+                        <li data-translate="services.transport.item1">Transport de marchandises et passagers</li>
+                        <li data-translate="services.transport.item2">Location de véhicules</li>
+                        <li data-translate="services.transport.item3">Camions et engins lourds</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3 data-translate="services.commerce.title">Commerce & Approvisionnement</h3>
+                    <ul>
+                        <li data-translate="services.commerce.item1">Commerce général (HDPE, portes, fenêtres)</li>
+                        <li data-translate="services.commerce.item2">Produits alimentaires en gros</li>
+                        <li data-translate="services.commerce.item3">Produits pétroliers et lubrifiants</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3 data-translate="services.travel.title">Voyages & Douanes</h3>
+                    <ul>
+                        <li data-translate="services.travel.item1">Réservation de vols internationaux</li>
+                        <li data-translate="services.travel.item2">Import / Export</li>
+                        <li data-translate="services.travel.item3">Services de dédouanement</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 data-translate="services.security.title">Sécurité & Services</h3>
+                    <ul>
+                        <li data-translate="services.security.item1">Agents de sécurité et surveillance</li>
+                        <li data-translate="services.security.item2">Aménagement paysager</li>
+                        <li data-translate="services.security.item3">Services de jardinage</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 data-translate="services.realestate.title">Immobilier</h3>
+                    <ul>
+                        <li data-translate="services.realestate.item1">Vente et location immobilière</li>
+                        <li data-translate="services.realestate.item2">Conseil en acquisition foncière</li>
+                        <li data-translate="services.realestate.item3">Aménagement et développement</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="entreprise" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 data-translate="about.title">À Propos de V.G Service-Trading</h2>
+                    <p class="lead" data-translate="about.description">V.G Service-Trading SARL est une entreprise diversifiée proposant une large gamme de services dans les domaines du génie civil, fabrication de briques, transport, sécurité, commerce, immobilier, entre autres.</p>
+                    
+                    <div class="vision-mission">
+                        <div class="vision">
+                            <h3><i class="fas fa-eye"></i> <span data-translate="about.vision.title">Notre Vision</span></h3>
+                            <p data-translate="about.vision.text">Devenir un leader en Afrique centrale dans la prestation intégrée de services, reconnu pour l'innovation et l'excellence.</p>
+                        </div>
+                        <div class="mission">
+                            <h3><i class="fas fa-bullseye"></i> <span data-translate="about.mission.title">Notre Mission</span></h3>
+                            <p data-translate="about.mission.text">Offrir des services diversifiés, de haute qualité, adaptés aux besoins des entreprises et particuliers, tout en respectant l'intégrité et l'environnement.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="values">
+                    <h3 data-translate="about.values.title">Nos Valeurs</h3>
+                    <div class="values-grid">
+                        <div class="value-item">
+                            <i class="fas fa-cogs"></i>
+                            <h4 data-translate="about.values.expertise.title">Expertise Multisectorielle</h4>
+                            <p data-translate="about.values.expertise.text">Une connaissance approfondie de multiples secteurs d'activité</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-handshake"></i>
+                            <h4 data-translate="about.values.reliability.title">Fiabilité & Professionnalisme</h4>
+                            <p data-translate="about.values.reliability.text">Des services de qualité avec un engagement total</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-dollar-sign"></i>
+                            <h4 data-translate="about.values.pricing.title">Prix Compétitifs</h4>
+                            <p data-translate="about.values.pricing.text">Des tarifs attractifs sans compromis sur la qualité</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-users"></i>
+                            <h4 data-translate="about.values.client.title">Approche Centrée Client</h4>
+                            <p data-translate="about.values.client.text">Une écoute attentive et des solutions personnalisées</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-translate="contact.title">Contactez-Nous</h2>
+                <p data-translate="contact.subtitle">Nous sommes présents en République Démocratique du Congo et en Tanzanie</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 data-translate="contact.info.title">Coordonnées</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <h4 data-translate="contact.info.website">Site Web</h4>
+                            <p><a href="https://www.vgservicestrading.com">www.vgservicestrading.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4 data-translate="contact.info.emails">Emails</h4>
+                            <p><a href="mailto:victorepenge5@gmail.com">victorepenge5@gmail.com</a></p>
+                            <p><a href="mailto:info@vgservicestrading.com">info@vgservicestrading.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4 data-translate="contact.info.phones">Téléphones</h4>
+                            <p><a href="tel:+243844404268">+243 844 404 268</a></p>
+                            <p><a href="tel:+243974407303">+243 974 407 303</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="locations">
+                    <h3 data-translate="contact.offices.title">Nos Bureaux</h3>
+                    <div class="location">
+                        <h4><i class="fas fa-map-marker-alt"></i> Lubumbashi, RDC</h4>
+                        <p>92, Avenue Sendwe<br>Haut-Katanga</p>
+                    </div>
+                    <div class="location">
+                        <h4><i class="fas fa-map-marker-alt"></i> Kinshasa, RDC</h4>
+                        <p>Av. Colonel Ebeya n°195<br>Immeuble Kisombe, Gombe</p>
+                    </div>
+                    <div class="location">
+                        <h4><i class="fas fa-map-marker-alt"></i> Dar Es Salaam, Tanzanie</h4>
+                        <p>Ushirika Building<br>Lumumba Street</p>
+                    </div>
+                </div>
+            </div>
+            <div class="legal-info">
+                <h3 data-translate="contact.legal.title">Informations Légales</h3>
+                <div class="legal-grid">
+                    <div class="legal-item">
+                        <strong>RCCM:</strong> USHIRCCM/24-B-00250
+                    </div>
+                    <div class="legal-item">
+                        <strong>ID.NAT:</strong> 05-C2301-N39072X
+                    </div>
+                    <div class="legal-item">
+                        <strong>NIF:</strong> A2405266B
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>V.G SERVICE-TRADING SARL</h3>
+                    <p data-translate="footer.description">Leader en services intégrés en Afrique Centrale, reconnu pour l'innovation et l'excellence.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer.services">Services</h4>
+                    <ul>
+                        <li data-translate="services.construction.title">Construction & Fabrication</li>
+                        <li data-translate="services.transport.title">Transport & Logistique</li>
+                        <li data-translate="services.commerce.title">Commerce & Approvisionnement</li>
+                        <li data-translate="services.travel.title">Voyages & Douanes</li>
+                        <li data-translate="services.security.title">Sécurité & Services</li>
+                        <li data-translate="services.realestate.title">Immobilier</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer.contact">Contact</h4>
+                    <p><i class="fas fa-envelope"></i> info@vgservicestrading.com</p>
+                    <p><i class="fas fa-phone"></i> +243 844 404 268</p>
+                    <p><i class="fas fa-globe"></i> www.vgservicestrading.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-translate="footer.copyright">&copy; 2024 V.G SERVICE-TRADING SARL. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
